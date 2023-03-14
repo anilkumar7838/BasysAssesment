@@ -1,0 +1,31 @@
+.score-card{
+    height: 70%;
+    width: 70%;
+    margin-left: 300px;
+    color: #222b39;
+}
+.score_card_block{
+    width: 20px;
+    height: 20px;
+}
+
+.vertical_block{
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+@media screen and (max-width:800px) {
+    .score-card{
+        width:60%;
+        margin-left: 35vmax;
+        font-size: 2vmax;
+    }
+    .score_card_block{
+        width:7vmax;
+        height:auto;
+    }
+    #score_card_top,#score_card_middle,#score_card_right > h2{
+        font-size: 1.6vmax;
+    }
+    
+}

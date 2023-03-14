@@ -1,0 +1,53 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height:100px;
+}
+.left-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left:290px;
+    color: #07428f;
+}
+.left-text h1{
+    font-size: 2vmax;
+}
+.left-text p{
+    font-size: 1vmax;
+    color:rgb(89, 109, 125)
+}
+.right-text{
+    position: absolute;
+    right:25px;
+}
+.icon{
+    margin: 0 1vmin;
+}
+.user-icon{
+    transform: scale(1.8);
+}
+
+@media screen and (max-width: 770px) {
+    .left-text{
+        left:40vmax;
+    }
+    .right-text{
+        right:1vmax;
+        transform: scale(0.7);
+    }
+    
+}
+@media screen and (max-width: 505px) {
+    .left-text{
+        left: 22vmax;
+    }
+    .right-text{
+        right:-23px;
+        top: 6vmax;
+        transform: scale(0.5);
+    }
+}

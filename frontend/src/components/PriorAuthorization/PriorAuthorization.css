@@ -1,0 +1,147 @@
+.block-pending::-webkit-scrollbar {
+    display: none;
+  }
+.auth-container{
+    background-color: #94bdf2;
+}
+.PriorAuth{
+    background-color: #94bdf2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    position: absolute;
+}
+.auth-header{
+    color:#07428f;
+    margin-bottom: 20px;
+}
+.block-pending{
+    overflow: auto;
+    height: 100vh;
+    color:#07428f;
+}
+.auth-details{
+    margin: 20px 0;
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius:10px;
+    background: #fff;
+    height:100px;
+    width:80vmax;
+    align-items: center;
+}
+
+.auth-block :hover{
+    color:#fff;
+    cursor: pointer;
+    background: #07428f;
+}
+
+.sec1,.sec2,.sec3,.sec4,.sec-5{
+    display: flex;
+    flex-direction: column;
+    margin: 4px auto;
+    font-weight: 450;
+}
+.sec1{
+    padding-left: 10px;
+    align-items: center;
+    margin-left: 8px;
+    padding: 1px;
+}
+.sec1-icon{
+    margin-top: 6px;
+    transform: scale(1.2);
+}
+.sec5-button{
+    background: #07428f;
+    padding: 10px;
+    line-height: 12px;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+}
+.sec5-button:hover{
+    background: #fff;
+    color:#07428f
+}
+
+.sec5 > p{
+    text-decoration:dashed;
+    font-weight: bold;
+}
+@media screen and (max-width:1500px) {
+    .block-pending{
+        width:68vmax;
+    }
+    .auth-details{
+        font-size: 1.3vmax;
+        width:100%;
+    }
+}
+@media screen and (max-width:940px) {
+    .block-pending{
+        width:100%;
+        font-size: 1.6vmax;
+    }
+    .auth-details{
+       margin-left: 1vmax;
+        width:90%;
+        font-size: 1.4vmax;
+    }
+    .sec5-button{
+        font-size: 1vmax;
+        padding: 1vmax;
+    }
+    .sec1 {
+        margin-left: 2vmax;
+        margin-right: 2vmax;
+    }
+
+}
+@media screen and (max-width:770px) {
+    .auth-block{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .block-pending{
+        align-items: center;
+        text-align: center;
+    }
+    .PriorAuth{
+        margin-left: 35vmax;
+        width:50%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .auth-details{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .sec5-button{
+        padding: 0.7vmax;
+        font-size: 1vmax;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .PriorAuth{
+        font-size: 1.4vmax;
+        margin-left: 21vmax;
+        width: 58%;
+
+    }
+}
